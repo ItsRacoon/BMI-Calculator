@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0; 
+    background-color: rgb(212, 84, 82);
+}
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.but
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}   
+button
+{
+    border-radius: 15px;
+
+}
+    </style>
+
+</head>
+<body>
+    <label for="userInput">Enter your Name</label>
+<input type="text" id="name">
+<label for="userInput">Enter your crush Name</label>
+<input type="text" id="crushName">
+<div class="but">
+<button onclick="convert(name,crushName)">Find Love</button>
+</div>
+<script> 
+     function convert(name,crushName)
+    {
+        var n = document.getElementById("name").value;
+    var cn = document.getElementById("crushName").value;
+      var lovescore=Math.random(90,100);
+      lovescore=Math.floor(lovescore)+1;
+      alert("The chances of "+ n+ "&"+cn+" are "+lovescore);
+        
+       
+        alert(bmi);
+    } </script>  
+</body>
+
+</html>
